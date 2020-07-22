@@ -141,7 +141,6 @@ INSERT INTO `donor` (`id`, `name`, `guardiansname`, `gender`, `dob`, `weight`, `
 (6, 'Demo Demo', 'Demo Demo', 'M', '1997-06-11', 71, 'b+', 'Demo@gmail', 'Demo', '8545878545'),
 (8, 'David Gilmour', 'Wilson Gilmour ', 'M', '1966-01-25', 89, 'b+', 'pinkfloyd@mail.com', 'espn', '8520258520'),
 (11, 'Tom Hiddleston', 'Williams J', 'M', '1985-01-25', 65, 'o-', 'tomhiddlestone@mail.', 'demo address', '7535752220');
-(11, 'Tom Hiddleston', 'Williams J', 'M', '1985-01-25', 65, 'o-', 'tomhiddlestone@mail.', 'demo address', '7535752220');
 
 -- --------------------------------------------------------
 
