@@ -10,6 +10,8 @@
 
 **INITIAL UI CONCEPT**
 
+- Admin's Dashboard
+
 ![](ui1.jpg)
 
 ## Getting Started
