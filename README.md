@@ -10,6 +10,10 @@
 
 **INITIAL UI CONCEPT**
 
+- Login Panel
+
+![](ui2.jpg)
+
 - Admin's Dashboard
 
 ![](ui1.jpg)
