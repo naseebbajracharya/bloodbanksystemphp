@@ -18,4 +18,8 @@
 
 ![](ui1.jpg)
 
+- Add Blood Details Form
+
+![](bld.jpg)
+
 ## Getting Started
