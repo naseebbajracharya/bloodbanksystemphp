@@ -22,4 +22,8 @@
 
 ![](bld.jpg)
 
+- Add Donor Details Form
+
+![](dnr.jpg)
+
 ## Getting Started
