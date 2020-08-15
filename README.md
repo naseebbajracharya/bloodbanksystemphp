@@ -26,8 +26,5 @@
 
 ![](dnr.jpg)
 
-- Campaign Details Form
-
-![](cmp.jpg)
 
 ## Getting Started
