@@ -36,3 +36,6 @@
 
 
 ## Getting Started
+
+- Database Name: secyear
+- URL: http://localhost/[PROJECT_FOLDER_NAME]
