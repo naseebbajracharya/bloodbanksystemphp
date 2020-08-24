@@ -35,7 +35,9 @@
 ![](cpn.jpg)
 
 
-## Getting Started
+### Installation
 
-- Database Name: secyear
-- URL: http://localhost/[PROJECT_FOLDER_NAME]
+- `git clone https://github.com/naseebbajracharya/bloodbanksystemphp`
+- `Create Database, you'll find the files under folder named DATABASE`
+- `Name DB as secyear`
+- `Go to URL: http://localhost/[PROJECT_FOLDER_NAME]`
