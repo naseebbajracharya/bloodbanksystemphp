@@ -12,7 +12,7 @@
 
 - Login Panel
 
-![](lgn.jpg)
+![](prototype1.png)
 
 - Admin's Dashboard
 
