@@ -6,7 +6,7 @@
 - CSS
 - Javascript
 
-## UNDER DEVELOPMENT
+
 
 **INITIAL UI CONCEPT**
 
