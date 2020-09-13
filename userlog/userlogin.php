@@ -2,31 +2,34 @@
 <?php include('../dbcon.php'); ?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="userstyle.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="userstyles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
 </head>
 <body>
-<div class="form-wrapper">
-  
-  <form action="#" method="post">
-    <h3><center>USER LOGIN</center></h3>
-	
-    <div class="form-item">
-		<input type="text" name="user" required="required" placeholder="Username" autofocus required></input>
-    </div>
-    
-    <div class="form-item">
-		<input type="password" name="pass" required="required" placeholder="Password" required></input>
-    </div>
-    
-    <div class="button-panel">
-		<input type="submit" class="button" title="Log In" name="userlogin" value="User Login"></input>
-    </div>
-  </form>
-  <?php
+
+
+
+
+<div class="login">
+			<h1>User Login</h1>
+			<form action="#" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="user" required="required" placeholder="Username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="pass" required="required" placeholder="Password" required>
+				<input type="submit" name="userlogin" value="Login"> </input>
+				<!-- <a href="../index.php" class="btn btn-info" role="button">Back</a> -->
+			</form>
+			
+</div>
+
+
+<?php
 	if (isset($_POST['userlogin']))
 		{
 			$username = mysqli_real_escape_string($con, $_POST['user']);
@@ -48,8 +51,11 @@
 				}
 		}
   ?>
-<a href="../index.php" class="btn btn-info" role="button">Back</a>
-</div>
+
 
 </body>
+
+
+
 </html>
+
