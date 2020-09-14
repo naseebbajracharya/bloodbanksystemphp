@@ -1,11 +1,10 @@
 # Blood Bank System Using PHP
-- With SB Admin 2 Admin Dashboard Template
+- With Startmin Open Source Admin Dashboard Template
 - PHP
 - MySQL Database
 - HTML
 - CSS
 - Javascript
-
 
 
 **INITIAL UI CONCEPT**
