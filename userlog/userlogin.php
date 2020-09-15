@@ -8,9 +8,6 @@
 </head>
 <body>
 
-
-
-
 <div class="login">
 			<h1>User Login</h1>
 			<form action="#" method="post">
@@ -24,8 +21,7 @@
 				<input type="password" name="pass" required="required" placeholder="Password" required>
 				<input type="submit" name="userlogin" value="Login"> </input>
 				<!-- <a href="../index.php" class="btn btn-info" role="button">Back</a> -->
-			</form>
-			
+			</form>	
 </div>
 
 
@@ -52,10 +48,7 @@
 		}
   ?>
 
-
 </body>
-
-
 
 </html>
 
