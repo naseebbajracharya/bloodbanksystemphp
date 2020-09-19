@@ -11,7 +11,7 @@
 
 - Login Panel
 
-![](prototype01.png)
+![](prototype1.png)
 
 - Admin's Dashboard
 
