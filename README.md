@@ -23,7 +23,7 @@
 
 - Add Donor Details Form
 
-![](dnr.jpg)
+![](prototype3.png)
 
 - Announcement Form
 
