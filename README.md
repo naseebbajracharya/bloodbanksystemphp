@@ -7,7 +7,7 @@
 - Javascript
 
 
-**INITIAL UI CONCEPT**
+**UI Screenshots & some INITIAL UI CONCEPT**
 
 - Login Panel
 
