@@ -39,7 +39,7 @@
 
 - User Dashboard
 
-![](ud.png)
+![](prototype8.png)
 
 
 ### Installation
