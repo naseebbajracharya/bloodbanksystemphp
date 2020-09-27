@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">BDMS</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -91,7 +91,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="adddonor.php"><i class="fa fa-table fa-user-plus"></i> Add Donor</a>
+                            <a href="adddonor.html"><i class="fa fa-table fa-user-plus"></i> Add Donor</a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-eye"></i> View Donor Details</a>
@@ -139,10 +139,12 @@ $bloodgroup = $_POST["bloodgroup"];
 $email = $_POST["email"];
 $address = $_POST["address"];
 $contact = $_POST["contact"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
 include 'dbconnect.php';
 //code after connection is successfull
-$qry = "insert into donor(name,guardiansname,gender,dob,weight,bloodgroup,email,address,contact) values ('$name','$guardiansname','$gender','$dob','$weight','$bloodgroup','$email','$address','$contact')";
+$qry = "insert into donor(name,guardiansname,gender,dob,weight,bloodgroup,email,address,contact,username,password) values ('$name','$guardiansname','$gender','$dob','$weight','$bloodgroup','$email','$address','$contact', '$username', '$password')";
 $result = mysqli_query($conn,$qry); //query executes
 
 if(!$result){
