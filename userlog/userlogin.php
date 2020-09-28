@@ -4,7 +4,6 @@
 <head>
 <link rel="stylesheet" type="text/css" href="userstyles.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-
 </head>
 <body>
 
@@ -14,24 +13,25 @@
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
-				<input type="text" name="user" required="required" placeholder="Username" required>
+				<input type="text" name="username" required="required" placeholder="Username" required>
 				<label for="password">
 					<i class="fas fa-lock"></i>
 				</label>
-				<input type="password" name="pass" required="required" placeholder="Password" required>
+				<input type="password" name="password" required="required" placeholder="Password" required>
 				<input type="submit" name="userlogin" value="Login"> </input>
 				<!-- <a href="../index.php" class="btn btn-info" role="button">Back</a> -->
-			</form>	
+			</form>
+			
 </div>
 
 
 <?php
 	if (isset($_POST['userlogin']))
 		{
-			$username = mysqli_real_escape_string($con, $_POST['user']);
-			$password = mysqli_real_escape_string($con, $_POST['pass']);
+			$username = mysqli_real_escape_string($con, $_POST['username']);
+			$password = mysqli_real_escape_string($con, $_POST['password']);
 			
-			$query 		= mysqli_query($con, "SELECT * FROM users WHERE  password='$password' and username='$username'");
+			$query 		= mysqli_query($con, "SELECT * FROM donor WHERE  password='$password' and username='$username'");
 			$row		= mysqli_fetch_array($query);
 			$num_row 	= mysqli_num_rows($query);
 			
@@ -48,7 +48,10 @@
 		}
   ?>
 
+
 </body>
+
+
 
 </html>
 
