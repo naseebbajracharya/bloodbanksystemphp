@@ -185,7 +185,7 @@
 
         <div id="page-wrapper">
             <div class="row">
-                <div class="col-lg-12">
+                <div class=".col-lg-12">
                     <h1 class="page-header">Admin Dashboard</h1>
                 </div>
                 <!-- /.col-lg-12 -->
@@ -254,7 +254,7 @@
                                 <div class="col-xs-9 text-right">
                                 <?php include 'dashannouncecount.php';?>
                                     <div class="huge"> </div>
-                                    <div>Announcement!</div>
+                                    <div>Announcement</div>
                                 </div>
                             </div>
                         </div>
@@ -292,7 +292,8 @@
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-8">
+			
+                <div class=".col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> Donors In Past Few Years
@@ -340,6 +341,28 @@
     <script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
+
+<footer>
+        <p>&copy; <?php echo date("Y"); ?>: Developed By <a href="https://github.com/naseebbajracharya/bloodbanksystemphp" style="color:white; text-decoration:none;" href="#"> Naseeb Bajracharya</a></p>
+    </footer>
+	
+	<style>
+	footer{
+   background-color: #424558;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    text-align: center;
+    color: #CCC;
+}
+
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    line-height: 100%;
+}
+	</style>
 
 <script>
 function myFunction(){
