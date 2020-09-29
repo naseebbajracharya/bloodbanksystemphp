@@ -15,7 +15,7 @@
 
 - Admin's Dashboard
 
-![](prototype2.png)
+![](prototype02.png)
 
 - Add Blood Details Form
 
