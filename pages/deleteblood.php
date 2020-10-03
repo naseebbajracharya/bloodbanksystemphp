@@ -1,33 +1,6 @@
 <html>
 
 <head>
-<style>
-#donor {
-font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-border-collapse: collapse;
-width: 80%;
-margin-top:100px;
-margin-left:80px;
-}
-
-#donor td, #customers th {
-border: 1px solid #ddd;
-padding: 8px;
-text-align:center;
-}
-
-#donor tr:nth-child(even){background-color: #f2f2f2;}
-
-#donor tr:hover {background-color: #ddd;}
-
-#donor th {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: center;
-background-color: #e7e7e7;
-color: black;
-}
-</style>
 
 <title>BDMS</title>
 
@@ -154,53 +127,80 @@ color: black;
 
 
 <div id="page-wrapper">
+<div class="container-fluid">
 <div class="row">
-<div class="col-lg-12">
-                    <h1 class="page-header">DELETE BLOOD COLLECTION</h1>
+<div class=".col-lg-12">
+               <h1 class="page-header">Delete Blood Details</h1>
                 </div>
-                
-<?php
+  </div>  
 
-include "dbconnect.php";
+				<div class="row">
+                        <div class=".col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Total Records of available bloods
+                                </div>
+								
+								 <div class="panel-body">
+                                    <div class="table-responsive">
+									<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+									
+									<?php
 
-$qry="select * from blood";
-$result=mysqli_query($conn,$qry);
+						include "dbconnect.php";
+
+						$qry="select * from blood";
+						$result=mysqli_query($conn,$qry);
 
 
-echo"<table border='1' id='donor'>
-<tr>
-    <th>Blood Group</th>
-    <th>Full Name</th>
-    <th>Gender</th>
-    <th>D.O.B</th>
-    <th>Weight</th>
-    <th>Address</th>
-    <th>Contact</th>
-    <th>Blood Quantity</th>
-    <th>Collection Date</th>
-    <th>Actions</th>
-</tr>";
+						echo"
+						<thead>
+						<tr>
+							<th>Blood Group</th>
+							<th>Full Name</th>
+							<th>Gender</th>
+							<th>D.O.B</th>
+							<th>Weight</th>
+							<th>Address</th>
+							<th>Contact</th>
+							<th>Quantity</th>
+							<th>Collection Date</th>
+							<th><i class='fa fa-pencil'></i></th>
+						</tr>
+						</thead>";
 
-while($row=mysqli_fetch_array($result)){
-  echo"<tr>
-  <td>".$row['bloodgroup']."</td>
-  <td>".$row['name']."</td>
-  <td>".$row['gender']."</td>
-  <td>".$row['dob']."</td>
-  <td>".$row['weight']."</td>
-  <td>".$row['address']."</td>
-  <td>".$row['contact']."</td>
-  <td>".$row['bloodqty']."</td>
-  <td>".$row['collection']."</td>
-  <td><a href='deletebloodrecord.php?id=".$row['id']."'>DELETE</a></td>
+						while($row=mysqli_fetch_array($result)){
+						  echo"<tbody>
+						  <tr class='gradeA'>
+						  <td>".$row['bloodgroup']."</td>
+						  <td>".$row['name']."</td>
+						  <td>".$row['gender']."</td>
+						  <td>".$row['dob']."</td>
+						  <td>".$row['weight']."</td>
+						  <td>".$row['address']."</td>
+						  <td>".$row['contact']."</td>
+						  <td>".$row['bloodqty']."</td>
+						  <td>".$row['collection']."</td>
+						  <td><a href='editbloodform.php?id=".$row['id']."'><i class='fa fa-trash' style='color:red'></i></a></td>
 
-</tr>";
-}
+						</tr>
+						<tbody>
+						";
+						}
 
-?>
+						?>
+						</table>
+									
+				</div>
+				</div>		
+		</div>
+		</div>	
+		</div>	
+		</div>
+		</div>
 </div>
-</div>
-</div>
+
+<td><a href='deletebloodrecord.php?id=".$row['id']."'>DELETE</a></td>
 
   <!-- jQuery -->
   <script src="../vendor/jquery/jquery.min.js"></script>
