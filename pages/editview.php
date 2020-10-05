@@ -1,33 +1,7 @@
 <html>
 
 <head>
-<style>
-#donor {
-font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-border-collapse: collapse;
-width: 80%;
-margin-top:100px;
-margin-left:80px;
-}
 
-#donor td, #customers th {
-border: 1px solid #ddd;
-padding: 8px;
-text-align:center;
-}
-
-#donor tr:nth-child(even){background-color: #f2f2f2;}
-
-#donor tr:hover {background-color: #ddd;}
-
-#donor th {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: center;
-background-color: #e7e7e7;
-color: black;
-}
-</style>
 
 <title>BDMS</title>
 
@@ -154,54 +128,83 @@ color: black;
             <!-- /.navbar-static-side -->
         </nav>
 
-
 <div id="page-wrapper">
+<div class="container-fluid">
 <div class="row">
-<div class="col-lg-12">
-                    <h1 class="page-header">EDIT DONORS</h1>
+<div class=".col-lg-12">
+               <h1 class="page-header">Edit Donors Detail</h1>
                 </div>
-                
-<?php
+  </div>  
 
-include "dbconnect.php";
+				<div class="row">
+                        <div class=".col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Total Records of available donors
+                                </div>
+								
+								 <div class="panel-body">
+                                    <div class="table-responsive">
+									<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+									
+									<?php
 
-$qry="select * from donor";
-$result=mysqli_query($conn,$qry);
+						include "dbconnect.php";
+
+						$qry="select * from donor";
+						$result=mysqli_query($conn,$qry);
 
 
-echo"<table border='1' id='donor'>
-<tr>
-    <th>Full Name</th>
-    <th>Guardian's Name</th>
-    <th>Gender</th>
-    <th>D.O.B</th>
-    <th>Weight</th>
-    <th>Blood Group</th>
-    <th>Email</th>
-    <th>Address</th>
-    <th>Contact</th>
-    <th>Actions</th>
-</tr>";
+						echo"
+						<thead>
+						<tr>
+							<th>Name</th>
+							<th>Username</th>
+							<th>Guardian's Name</th>
+							<th>Gender</th>
+							<th>D.O.B</th>
+							<th>Weight</th>
+							<th>Blood Group</th>
+							<th>Email</th>
+							<th>Address</th>
+							<th>Contact</th>
+							<th><i class='fa fa-pencil'></i></th>
+						</tr>
+						</thead>";
 
-while($row=mysqli_fetch_array($result)){
-  echo"<tr>
-  <td>".$row['name']."</td>
-  <td>".$row['guardiansname']."</td>
-  <td>".$row['gender']."</td>
-  <td>".$row['dob']."</td>
-  <td>".$row['weight']."</td>
-  <td>".$row['bloodgroup']."</td>
-  <td>".$row['email']."</td>
-  <td>".$row['address']."</td>
-  <td>".$row['contact']."</td>
-  <td><a href='editform.php?id=".$row['id']."'>EDIT</a></td>
-</tr>";
-}
+						while($row=mysqli_fetch_array($result)){
+						  echo"<tbody>
+						  <tr>
+						  <td>".$row['name']."</td>
+						  <td>".$row['username']."</td>
+						  <td>".$row['guardiansname']."</td>
+						  <td>".$row['gender']."</td>
+						  <td>".$row['dob']."</td>
+						  <td>".$row['weight']."</td>
+						  <td>".$row['bloodgroup']."</td>
+						  <td>".$row['email']."</td>
+						  <td>".$row['address']."</td>
+						  <td>".$row['contact']."</td>
+						  <td><a href='editform.php?id=".$row['id']."'><i class='fa fa-edit' style='color:green'></i></a></td>
 
-?>
+						</tr>
+						</tbody>";
+						}
+
+						?>
+						</table>
+									
+				</div>
+				</div>		
+		</div>
+		</div>	
+		</div>	
+		</div>
+		</div>
+
 </div>
-</div>
-</div>
+
+
 
   <!-- jQuery -->
   <script src="../vendor/jquery/jquery.min.js"></script>
