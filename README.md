@@ -33,9 +33,9 @@
 
 ![](prototype5.png)
 
-- User Login
+- User's Login Panel
 
-![](prototype7.png)
+![](prototype07.png)
 
 - User Dashboard
 
