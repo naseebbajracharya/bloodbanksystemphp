@@ -63,7 +63,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <!-- <li class="divider"></li> -->
-                        <li><a href="../logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -192,7 +192,7 @@
                                 <div class="col-xs-9 text-right">
                                 <?php include '../pages/dashannouncecount.php';?>
                                     <div class="huge"> </div>
-                                    <div>Announcement!</div>
+                                    <div>Announcement</div>
                                 </div>
                             </div>
                         </div>
