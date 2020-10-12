@@ -68,23 +68,7 @@
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#" onclick="myFunction()">
-                                <div>
-                                    <i class="fa fa-comment fa-fw" ></i> Notify All 
-                                    <span class="pull-right text-muted small" >4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                    
-                    </ul>
-                    <!-- /.dropdown-alerts -->
-                </li>
+               
                 <!-- /.dropdown -->
             </ul>
             
