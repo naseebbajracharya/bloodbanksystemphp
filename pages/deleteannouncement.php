@@ -1,33 +1,6 @@
 <html>
 
 <head>
-<style>
-#donor {
-font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-border-collapse: collapse;
-width: 80%;
-margin-top:100px;
-margin-left:80px;
-}
-
-#donor td, #customers th {
-border: 1px solid #ddd;
-padding: 8px;
-text-align:center;
-}
-
-#donor tr:nth-child(even){background-color: #f2f2f2;}
-
-#donor tr:hover {background-color: #ddd;}
-
-#donor th {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: center;
-background-color: #e7e7e7;
-color: black;
-}
-</style>
 
 <title>BDMS</title>
 
@@ -153,46 +126,74 @@ color: black;
             <!-- /.navbar-static-side -->
         </nav>
 
-
 <div id="page-wrapper">
+<div class="container-fluid">
 <div class="row">
-<div class="col-lg-12">
-                    <h1 class="page-header"><center>---DELETE ANNOUNCEMENTS---</center></h1>
+<div class=".col-lg-12">
+               <h1 class="page-header">Delete Announcement Detail</h1>
                 </div>
-                
-<?php
+  </div>  
 
-include "dbconnect.php";
+				<div class="row">
+                        <div class=".col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Total Records of announcement made
+                                </div>
+								
+								 <div class="panel-body">
+                                    <div class="table-responsive">
+									<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+									
+									<?php
 
-$qry="select * from announce";
-$result=mysqli_query($conn,$qry);
+						include "dbconnect.php";
+
+						$qry="select * from announce";
+						$result=mysqli_query($conn,$qry);
 
 
-echo"<table border='1' id='donor'>
-<tr>
-    <th>Title</th>
-    <th>Blood Needed</th>
-    <th>Date&Time</th>
-    <th>Organizer</th>
-    <th>Requirements</th>
-    <th>Action</th>
-</tr>";
+						echo"
+						<thead>
+												
+						<tr>
+							<th>Title</th>
+							<th>Blood Needed</th>
+							<th>Date&Time</th>
+							<th>Organizer</th>
+							<th>Requirements</th>
+							<th><i class='fa fa-pencil'></i></th>
+						</tr>
+						</thead>";
 
-while($row=mysqli_fetch_array($result)){
-  echo"<tr>
-  <td>".$row['announcement']."</td>
-  <td>".$row['bloodneed']."</td>
-  <td>".$row['dat']."</td>
-  <td>".$row['organizer']."</td>
-  <td>".$row['requirements']."</td>
-  <td><a href='deletedannounce.php?id=".$row['id']."'>DELETE</a></td>
-</tr>";
-}
+						while($row=mysqli_fetch_array($result)){
+						  echo"<tbody>
+						  <tr>
+						  <td>".$row['announcement']."</td>
+						  <td>".$row['bloodneed']."</td>
+						  <td>".$row['dat']."</td>
+						  <td>".$row['organizer']."</td>
+						  <td>".$row['requirements']."</td>
+						  <td><a href='deletedannounce.php?id=".$row['id']."'><i class='fa fa-trash' style='color:red'></i></a></td>
 
-?>
+						</tr>
+						</tbody>";
+						}
+
+						?>
+						</table>
+									
+				</div>
+				</div>		
+		</div>
+		</div>	
+		</div>	
+		</div>
+		</div>
+
 </div>
-</div>
-</div>
+
+
 
   <!-- jQuery -->
   <script src="../vendor/jquery/jquery.min.js"></script>
