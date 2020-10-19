@@ -69,7 +69,7 @@
                                         </label>
                                     </div>
                                     <!-- Change this to a button or input when using this as a form -->
-                                    <input type="submit" class="btn btn-info btn-block" title="Log In" name="login" value="Login"></input>
+                                    <input type="submit" class="btn btn-info btn-block" style="border-radius:0%;" title="Log In" name="login" value="Login"></input>
                                 </fieldset>
                                 
                             </form>
@@ -131,7 +131,7 @@
     <!-- Footer -->
 	<footer class="page-footer font-small special-color-dark pt-4">
 		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?>:
+		<div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?>
 		 Developed By <a href="https://github.com/naseebbajracharya/bloodbanksystemphp" style="text-decoration:none;">Naseeb Bajracharya</a>
 		</div>
 		<!-- Copyright -->
