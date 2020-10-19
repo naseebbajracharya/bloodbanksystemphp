@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Startmin - Bootstrap Admin Theme</title>
+        <title>BDMS - Admin Panel</title>
 
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -36,12 +36,12 @@
 		<nav class="navbar navbar-inverse">
 			  <div class="container-fluid">
 				<div class="navbar-header">
-				  <a class="navbar-brand" href="#">Blood Donor Management System</a>
+				  <a class="navbar-brand" href="">Blood Donor Management System</a>
 				</div>
 
 				<ul class="nav navbar-nav navbar-right">
 				  <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-				  <li><a href="userlog/userlogin.php" ><span class="glyphicon glyphicon-log-in"></span> User Login</a></li>
+				  <li><a href="userlog/userlogin.php" ><span class="glyphicon glyphicon-user" style="color:#00A10F;"></span> User Login</a></li>
 				</ul>
 			  </div>
 		</nav>
@@ -71,7 +71,9 @@
                                     <!-- Change this to a button or input when using this as a form -->
                                     <input type="submit" class="btn btn-info btn-block" title="Log In" name="login" value="Login"></input>
                                 </fieldset>
+                                
                             </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -108,6 +110,8 @@
 			
         </div>
 
+        
+
         <!-- jQuery -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
@@ -123,6 +127,18 @@
 		
 
     </body>
+
+    <!-- Footer -->
+	<footer class="page-footer font-small special-color-dark pt-4">
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?>:
+		 Developed By <a href="https://github.com/naseebbajracharya/bloodbanksystemphp" style="text-decoration:none;">Naseeb Bajracharya</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+<!-- Footer -->
+    
 </html>
   
   
