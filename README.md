@@ -7,9 +7,9 @@
 - Javascript
 
 
-**UI Screenshots & some INITIAL UI CONCEPT**
+**PROJECT SCREENSHOTS**
 
-- Login Panel
+- Admin's Login Panel
 
 ![](prototype1.png)
 
