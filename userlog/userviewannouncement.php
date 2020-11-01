@@ -87,10 +87,6 @@ color: black;
                       
                             <!-- /.nav-second-level -->
                         </li>
-                       
-                        <li>
-                            <a href="userviewdonor.php"><i class="fa fa-edit fa-eye"></i> View Donor Details</a>
-                        </li>
                         
                         <li>
                             <a href="userviewannouncement.php"><i class="fa fa-bullhorn"></i> View Announcements </a>
@@ -110,42 +106,67 @@ color: black;
 
 
 <div id="page-wrapper">
+<div class="container-fluid">
 <div class="row">
-<div class="col-lg-12">
-                    <h1 class="page-header"><center>---ANNOUNCEMENTS---</center></h1>
+<div class=".col-lg-12">
+               <h1 class="page-header">Announcement Detail</h1>
                 </div>
-                
-<?php
+  </div>  
 
-include "../pages/dbconnect.php";
+				<div class="row">
+                        <div class=".col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Total Records of announcement made
+                                </div>
+								
+								 <div class="panel-body">
+                                    <div class="table-responsive">
+									<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+									
+									<?php
 
-$qry="select * from announce";
-$result=mysqli_query($conn,$qry);
+						include "../pages/dbconnect.php";
+
+						$qry="select * from announce";
+						$result=mysqli_query($conn,$qry);
 
 
-echo"<table border='1' id='donor'>
-<tr>
-    <th>Title</th>
-    <th>Blood Needed</th>
-    <th>Date&Time</th>
-    <th>Organizer</th>
-    <th>Requirements</th>
-</tr>";
+						echo"
+						<thead>
+												
+						<tr>
+							<th>Title</th>
+							<th>Blood Needed</th>
+							<th>Date&Time</th>
+							<th>Organizer</th>
+							<th>Requirements</th>
+						</tr>
+						</thead>";
 
-while($row=mysqli_fetch_array($result)){
-  echo"<tr>
-  <td>".$row['announcement']."</td>
-  <td>".$row['bloodneed']."</td>
-  <td>".$row['dat']."</td>
-  <td>".$row['organizer']."</td>
-  <td>".$row['requirements']."</td>
+						while($row=mysqli_fetch_array($result)){
+						  echo"<tbody>
+						  <tr>
+						  <td>".$row['announcement']."</td>
+						  <td>".$row['bloodneed']."</td>
+						  <td>".$row['dat']."</td>
+						  <td>".$row['organizer']."</td>
+						  <td>".$row['requirements']."</td>
 
-</tr>";
-}
+						</tr>
+						</tbody>";
+						}
 
-?>
-</div>
-</div>
+						?>
+						</table>
+									
+				</div>
+				</div>		
+		</div>
+		</div>	
+		</div>	
+		</div>
+		</div>
 </div>
 
   <!-- jQuery -->
