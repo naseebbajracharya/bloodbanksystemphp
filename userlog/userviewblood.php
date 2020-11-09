@@ -1,34 +1,5 @@
 <html>
-
 <head>
-<style>
-#donor {
-font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-border-collapse: collapse;
-width: 80%;
-margin-top:100px;
-margin-left:80px;
-}
-
-#donor td, #customers th {
-border: 1px solid #ddd;
-padding: 8px;
-text-align:center;
-}
-
-#donor tr:nth-child(even){background-color: #f2f2f2;}
-
-#donor tr:hover {background-color: #ddd;}
-
-#donor th {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: center;
-background-color: #e7e7e7;
-color: black;
-}
-</style>
-
 <title>BDMS</title>
 
 <!-- Bootstrap Core CSS -->
@@ -46,8 +17,8 @@ color: black;
 
 </head>
 
-
 <body>
+
 <div id="wrapper">
 
 <!-- Navigation -->
@@ -123,13 +94,13 @@ color: black;
         </nav>
 
 
-<div id="page-wrapper">
-<div class="container-fluid">
-<div class="row">
-<div class=".col-lg-12">
-               <h1 class="page-header">Blood Collection</h1>
+	<div id="page-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class=".col-lg-12">
+					<h1 class="page-header">Blood Collection</h1>
                 </div>
-  </div>  
+			</div>  
 
 				<div class="row">
                         <div class=".col-lg-12">
@@ -186,26 +157,26 @@ color: black;
 						?>
 						</table>
 									
-				</div>
+					</div>
 				</div>		
-		</div>
+			</div>
 		</div>	
 		</div>	
 		</div>
 		</div>
 </div>
 
-  <!-- jQuery -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
+	<!-- jQuery -->
+	<script src="../vendor/jquery/jquery.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
-<!-- Metis Menu Plugin JavaScript -->
-<script src="../vendor/metisMenu/metisMenu.min.js"></script>
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<script src="../dist/js/sb-admin-2.js"></script>
+	<!-- Custom Theme JavaScript -->
+	<script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 </html>
