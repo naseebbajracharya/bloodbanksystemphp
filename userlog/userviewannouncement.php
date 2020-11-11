@@ -1,33 +1,6 @@
 <html>
 
 <head>
-<style>
-#donor {
-font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-border-collapse: collapse;
-width: 80%;
-margin-top:100px;
-margin-left:80px;
-}
-
-#donor td, #customers th {
-border: 1px solid #ddd;
-padding: 8px;
-text-align:center;
-}
-
-#donor tr:nth-child(even){background-color: #f2f2f2;}
-
-#donor tr:hover {background-color: #ddd;}
-
-#donor th {
-padding-top: 12px;
-padding-bottom: 12px;
-text-align: center;
-background-color: #e7e7e7;
-color: black;
-}
-</style>
 
 <title>BDMS</title>
 
