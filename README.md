@@ -27,7 +27,7 @@
 
 - Announcement Form
 
-![](prototype4.png)
+![](prototype04.png)
 
 - Campaign Form
 
