@@ -31,7 +31,7 @@
 
 - Campaign Form
 
-![](prototype5.png)
+![](prototype05.png)
 
 - User's Login Panel
 
