@@ -19,7 +19,7 @@
 
 - Add Blood Details Form
 
-![](prototype6.png)
+![](prototype06.png)
 
 - Add Donor Details Form
 
