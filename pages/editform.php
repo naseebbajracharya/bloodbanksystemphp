@@ -158,32 +158,32 @@ while($row=mysqli_fetch_array($result)){
                                         </div>
                                         <div class="form-group">
                                             <label>Enter Guardian's Name</label>
-                                            <input class="form-control" placeholder="Enter Here" name="guardiansname" value='<?php echo $row['guardiansname']; ?>' required>
+                                            <input class="form-control" type="text" name="guardiansname" value='<?php echo $row['guardiansname']; ?>' required>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label>Gender [ M/F ]</label>
-                                            <input class="form-control" placeholder="Enter Here" name="gender" value='<?php echo $row['gender']; ?>' required>
+                                            <input class="form-control" type="text" name="gender" value='<?php echo $row['gender']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter D.O.B</label>
-                                            <input class="form-control" type="date" placeholder="Enter DOB" name="dob" value='<?php echo $row['dob']; ?>' required>
+                                            <input class="form-control" type="date" name="dob" value='<?php echo $row['dob']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter Weight</label>
-                                            <input class="form-control" placeholder="Enter Weight" name="weight" value='<?php echo $row['weight']; ?>' required>
+                                            <input class="form-control" type="number" name="weight" value='<?php echo $row['weight']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter Blood Group</label>
-                                            <input class="form-control" placeholder="Enter Here" name="bloodgroup" value='<?php echo $row['bloodgroup']; ?>' required>
+                                            <input class="form-control" type="text" name="bloodgroup" value='<?php echo $row['bloodgroup']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter Email Id</label>
-                                            <input class="form-control" placeholder="Enter Email Id" name="email" value='<?php echo $row['email']; ?>' required>
+                                            <input class="form-control" type="email" name="email" value='<?php echo $row['email']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
