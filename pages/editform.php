@@ -113,7 +113,10 @@
                         <li>
                             <a href="deleteview.php"><i class="fa fa-refresh"></i> Delete Donor Details</a>
                         </li>
+						
+						  
                     </ul>
+					
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
@@ -123,7 +126,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">EDIT BLOOD DETAILS</h1>
+                    <h1 class="page-header">Edit Blood Details</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -132,7 +135,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Please Edit the form below
+                            Please make your changes by updating the form below:
                         </div>
                         <div class="panel-body">
                             <div class="row">
@@ -150,7 +153,7 @@ while($row=mysqli_fetch_array($result)){
                                      
                                         <div class="form-group">
                                             <label>Enter Full Name</label>
-                                            <input class="form-control" name="name" value='<?php echo $row['name']; ?>' required>
+                                            <input class="form-control" name="name" type="text" value='<?php echo $row['name']; ?>' required>
                                             <p class="help-block">Example:Harry Den</p>
                                         </div>
                                         <div class="form-group">
@@ -165,7 +168,7 @@ while($row=mysqli_fetch_array($result)){
 
                                         <div class="form-group">
                                             <label>Enter D.O.B</label>
-                                            <input class="form-control" placeholder="Enter DOB" name="dob" value='<?php echo $row['dob']; ?>' required>
+                                            <input class="form-control" type="date" placeholder="Enter DOB" name="dob" value='<?php echo $row['dob']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
