@@ -113,7 +113,40 @@
                         <li>
                             <a href="deleteview.php"><i class="fa fa-refresh"></i> Delete Donor Details</a>
                         </li>
-						
+						<li>
+                            <a href=""><i class="fa fa-bullhorn"></i> Announcements <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="makeannouncement.html">Make Announcement</a>
+                                </li>
+                                <li>
+                                    <a href="viewannouncement.php">View Announcement</a>
+                                </li>
+                                <li>
+                                    <a href="editannounceform.php">Edit Announcement</a>
+                                </li>
+                                <li>
+                                    <a href="deleteannouncement.php">Remove Announcement</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href=""><i class="fa fa-flag"></i> Campaigns <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="newcampaign.html">New Campaign</a>
+                                </li>
+                                <li>
+                                        <a href="viewcampaign.php">View Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="updatecampaign.php">Update Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="deletedcampaign.php">Delete Campaign</a>
+                                    </li>
+                    </ul>
 						  
                     </ul>
 					
