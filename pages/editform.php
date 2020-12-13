@@ -188,12 +188,12 @@ while($row=mysqli_fetch_array($result)){
 
                                         <div class="form-group">
                                             <label>Enter Address</label>
-                                            <input class="form-control" placeholder="Enter Address Here" name="address" value='<?php echo $row['address']; ?>' required>
+                                            <input class="form-control" type="text" name="address" value='<?php echo $row['address']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter Contact Number</label>
-                                            <input class="form-control" placeholder="Enter Here" name="contact" value='<?php echo $row['contact']; ?>' required>
+                                            <input class="form-control" type="number" name="contact" value='<?php echo $row['contact']; ?>' required>
                                         </div>
 
                                        
@@ -204,7 +204,7 @@ while($row=mysqli_fetch_array($result)){
                                         
                 
                                     
-                                    <button type="submit" class="btn btn-default">EDIT</button>
+                                    <button type="submit" class="btn btn-success">Make Changes</button>
                                     </form>
                                 </div>
     <?php
