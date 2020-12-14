@@ -160,7 +160,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">EDIT BLOOD</h1>
+                    <h1 class="page-header">Edit Blood Details</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -169,36 +169,36 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Blood Details
+                            Please make your changes by updating the form below:
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
 
                                 <?php
-include 'dbconnect.php';
-$id=$_GET['id'];
-$qry= "select * from blood where id='$id'";
-$result=mysqli_query($conn,$qry);
-while($row=mysqli_fetch_array($result)){
-?> 
+									include 'dbconnect.php';
+									$id=$_GET['id'];
+									$qry= "select * from blood where id='$id'";
+									$result=mysqli_query($conn,$qry);
+									while($row=mysqli_fetch_array($result)){
+									?> 
 
                                     <form role="form" action="editedblood.php" method="post">
                                      
                                         <div class="form-group">
                                             <label>Enter Full Name</label>
-                                            <input class="form-control" name="name" value='<?php echo $row['name']; ?>' required>
+                                            <input class="form-control" type="text" name="name" value='<?php echo $row['name']; ?>' required>
                                             <p class="help-block">Example:Harry Den</p>
                                         </div>
                                         
                                         <div class="form-group">
                                             <label>Gender [ M/F ]</label>
-                                            <input class="form-control" placeholder="Enter Here" name="gender" value='<?php echo $row['gender']; ?>' required>
+                                            <input class="form-control" type="text" name="gender" value='<?php echo $row['gender']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter D.O.B</label>
-                                            <input class="form-control" placeholder="Enter DOB" name="dob" value='<?php echo $row['dob']; ?>' required>
+                                            <input class="form-control" type="date" name="dob" value='<?php echo $row['dob']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
