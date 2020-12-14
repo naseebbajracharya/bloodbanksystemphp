@@ -188,7 +188,6 @@
                                         <div class="form-group">
                                             <label>Enter Full Name</label>
                                             <input class="form-control" type="text" name="name" value='<?php echo $row['name']; ?>' required>
-                                            <p class="help-block">Example:Harry Den</p>
                                         </div>
                                         
                                         <div class="form-group">
@@ -203,7 +202,7 @@
 
                                         <div class="form-group">
                                             <label>Enter Weight</label>
-                                            <input class="form-control" placeholder="Enter Weight" name="weight" value='<?php echo $row['weight']; ?>' required>
+                                            <input class="form-control" type="number" name="weight" value='<?php echo $row['weight']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
@@ -228,14 +227,14 @@
 
                                         <div class="form-group">
                                                 <label>Collection Date</label>
-                                                <input class="form-control" placeholder="Enter Here" name="collection" value='<?php echo $row['collection']; ?>' required>
+                                                <input class="form-control" type="date" name="collection" value='<?php echo $row['collection']; ?>' required>
                                             </div>
 
                                        
              <!-- id hidden grna input type ma "hidden" -->
              <input type="hidden" name="id" value="<?php echo $row['id'];?>">
                                 
-             <button type="submit"  class="btn btn-default">Edit</button>
+             <button type="submit"  class="btn btn-success">Make Changes</button>
  
                                     </form>
                                 </div>
