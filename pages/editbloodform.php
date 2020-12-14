@@ -208,29 +208,28 @@
 
                                         <div class="form-group">
                                             <label>Enter Blood Group</label>
-                                            <input class="form-control" placeholder="Enter Here" name="bloodgroup" value='<?php echo $row['bloodgroup']; ?>' required>
+                                            <input class="form-control" type="text" name="bloodgroup" value='<?php echo $row['bloodgroup']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter Address</label>
-                                            <input class="form-control" placeholder="Enter Address Here" name="address" value='<?php echo $row['address']; ?>' required>
+                                            <input class="form-control" type="text" name="address" value='<?php echo $row['address']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Enter Contact Number</label>
-                                            <input class="form-control" placeholder="Enter Here" name="contact" value='<?php echo $row['contact']; ?>' required>
+                                            <input class="form-control" type="number" name="contact" value='<?php echo $row['contact']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Blood Quantity</label>
-                                            <input class="form-control" placeholder="Enter Here" name="bloodqty" value='<?php echo $row['bloodqty']; ?>' required>
+                                            <input class="form-control" type="number" name="bloodqty" value='<?php echo $row['bloodqty']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                                 <label>Collection Date</label>
                                                 <input class="form-control" placeholder="Enter Here" name="collection" value='<?php echo $row['collection']; ?>' required>
                                             </div>
-
 
                                        
              <!-- id hidden grna input type ma "hidden" -->
@@ -241,9 +240,9 @@
                                     </form>
                                 </div>
 
-<?php
-}
-?>
+						<?php
+						}
+						?>
                                 
                             </div>
                             <!-- /.row (nested) -->
