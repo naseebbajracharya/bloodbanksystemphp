@@ -39,9 +39,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">BBMS</a>
             </div>
             <!-- /.navbar-header -->
+			
+			<ul class="nav navbar-top-links navbar-right">
+               
+             
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <!-- <li class="divider"></li> -->
+                        <li><a href="../logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+               
+                <!-- /.dropdown -->
+            </ul>
 
             <!-- /.navbar-top-links -->
 
@@ -151,28 +170,28 @@
                                 <div class="col-lg-6">
                                     <form role="form" action="index.html" method="post">
 
-<?php
-include 'dbconnect.php';
-$name = $_POST["name"];    
-$gender = $_POST["gender"];
-$dob = $_POST["dob"];
-$weight = $_POST["weight"];
-$bloodgroup = $_POST["bloodgroup"];
-$address = $_POST["address"];
-$contact = $_POST["contact"];
-$bloodqty = $_POST["bloodqty"];
-$collection = $_POST["collection"];
-$id=$_POST['id'];
-//update query
-$qry = "update blood set name='$name', gender='$gender', dob='$dob', weight='$weight', bloodgroup='$bloodgroup', address='$address', contact='$contact', bloodqty='$bloodqty', collection='$collection' where id='$id'";
-$result = mysqli_query($conn,$qry); //query executes
-if(!$result){
-    echo"ERROR". mysqli_error();
-}else {
-    echo"SUCCESSFULLY UPDATED";
-    // header ("Location:editblood.php");
-}
-?>
+								<?php
+									include 'dbconnect.php';
+										$name = $_POST["name"];    
+										$gender = $_POST["gender"];
+										$dob = $_POST["dob"];
+										$weight = $_POST["weight"];
+										$bloodgroup = $_POST["bloodgroup"];
+										$address = $_POST["address"];
+										$contact = $_POST["contact"];
+										$bloodqty = $_POST["bloodqty"];
+										$collection = $_POST["collection"];
+										$id=$_POST['id'];
+										//update query
+										$qry = "update blood set name='$name', gender='$gender', dob='$dob', weight='$weight', bloodgroup='$bloodgroup', address='$address', contact='$contact', bloodqty='$bloodqty', collection='$collection' where id='$id'";
+										$result = mysqli_query($conn,$qry); //query executes
+										if(!$result){
+											echo"ERROR". mysqli_error();
+										}else {
+											echo"SUCCESSFULLY UPDATED";
+											// header ("Location:editblood.php");
+										}
+								?>
 
                                   </form>
                                 </div>
