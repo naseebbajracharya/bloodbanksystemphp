@@ -155,7 +155,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">EDIT ANNOUCEMENT</h1>
+                    <h1 class="page-header">Edit Announcement Detail</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -164,7 +164,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Details
+                            Total Records of announcement made
                         </div>
                         <div class="panel-body">
                             <div class="row">
@@ -181,19 +181,19 @@
                                     <form role="form" action="editedannounce.php" method="post">
                                      
                                         <div class="form-group">
-                                            <label>Enter Announcement Title</label>
-                                            <input class="form-control" name="announcement" value='<?php echo $row['announcement']; ?>' required>
+                                            <label>Announcement Title</label>
+                                            <input class="form-control" name="announcement" type="text" value='<?php echo $row['announcement']; ?>' required>
                                             
                                         </div>
                                         
                                         <div class="form-group">
                                             <label>Blood Needed (type)</label>
-                                            <input class="form-control" placeholder="Enter Here" name="bloodneed" value='<?php echo $row['bloodneed']; ?>' required>
+                                            <input class="form-control" type="text" name="bloodneed" value='<?php echo $row['bloodneed']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Date and Time</label>
-                                            <input class="form-control" placeholder="Enter Date & Time" name="dat" value='<?php echo $row['dat']; ?>' required>
+                                            <input class="form-control" name="dat" type="date" value='<?php echo $row['dat']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
