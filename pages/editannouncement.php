@@ -127,6 +127,24 @@
                                     </li>
                                 </ul>
                             </li>
+							
+							<li>
+                                <a href=""><i class="fa fa-flag"></i> Campaigns <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="newcampaign.html">New Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="viewcampaign.php">View Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="updatecampaign.php">Update Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="deletedcampaign.php">Delete Campaign</a>
+                                    </li>
+                                </ul>
+                            </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -152,20 +170,20 @@
                             <div class="row">
                                 <div class="col-lg-6">
 
-<?php
-include 'dbconnect.php';
-$id=$_GET['id'];
-$qry= "select * from announce where id='$id'";
-$result=mysqli_query($conn,$qry);
-while($row=mysqli_fetch_array($result)){
-?> 
+								<?php
+									include 'dbconnect.php';
+									$id=$_GET['id'];
+									$qry= "select * from announce where id='$id'";
+									$result=mysqli_query($conn,$qry);
+									while($row=mysqli_fetch_array($result)){
+								?> 
 
                                     <form role="form" action="editedannounce.php" method="post">
                                      
                                         <div class="form-group">
                                             <label>Enter Announcement Title</label>
                                             <input class="form-control" name="announcement" value='<?php echo $row['announcement']; ?>' required>
-                                            <p class="help-block">Example:Harry Den</p>
+                                            
                                         </div>
                                         
                                         <div class="form-group">
