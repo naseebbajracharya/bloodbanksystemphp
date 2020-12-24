@@ -198,18 +198,18 @@
 
                                         <div class="form-group">
                                                 <label>Organized by</label>
-                                                <input class="form-control" placeholder="Enter Organizer" name="organizer" value='<?php echo $row['organizer']; ?>' required>
+                                                <input class="form-control" type="text" name="organizer" value='<?php echo $row['organizer']; ?>' required>
                                             </div>
 
                                         <div class="form-group">
                                                 <label>Requirements</label>
-                                                <textarea class="form-control" rows="3" name="requirements" required><?php echo $row['requirements']; ?></textarea>
+                                                <textarea class="form-control" rows="4" name="requirements" type="text" required><?php echo $row['requirements']; ?></textarea>
                                             </div>
                                        
                                      <!-- id hidden grna input type ma "hidden" -->
             <input type="hidden" name="id" value="<?php echo $row['id'];?>"> 
                                 
-                                        <button type="submit"  class="btn btn-default">Submit</button>
+                                        <button type="submit" class="btn btn-success">Make Changes</button>
                 
                                     </form>
                                 </div>
