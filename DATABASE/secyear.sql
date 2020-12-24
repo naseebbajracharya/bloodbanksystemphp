@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2020 at 01:59 PM
+-- Generation Time: Dec 24, 2020 at 12:51 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `announce` (
 `id` int(11) NOT NULL,
   `announcement` varchar(50) NOT NULL,
   `bloodneed` varchar(3) NOT NULL,
-  `dat` datetime NOT NULL,
+  `dat` date NOT NULL,
   `organizer` varchar(50) NOT NULL,
   `requirements` text NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `announce` (
 --
 
 INSERT INTO `announce` (`id`, `announcement`, `bloodneed`, `dat`, `organizer`, `requirements`) VALUES
-(1, 'DEMO ANNOUNCEMENT', 'B+', '2018-05-05 05:25:00', 'Helping Hands', 'Weight at least 50kg, No alcohol intake in 24hrs prior to donation, light meal should be taken before donation, be in good health, must be 18 years old and must have at least 3 month interval than the last donation.');
+(1, 'DEMO ANNOUNCEMENT', 'B+', '2018-06-24', 'Helping Hands', 'Weight at least 50kg, No alcohol intake in 24hrs prior to donation, light meal should be taken before donation, be in good health, must be 18 years old and must have at least 3 month interval than the last donation.');
 
 -- --------------------------------------------------------
 
@@ -132,14 +132,15 @@ CREATE TABLE IF NOT EXISTS `donor` (
   `contact` varchar(10) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `donor`
 --
 
 INSERT INTO `donor` (`id`, `name`, `guardiansname`, `gender`, `dob`, `weight`, `bloodgroup`, `email`, `address`, `contact`, `username`, `password`) VALUES
-(18, 'demo', 'demo', 'M', '2020-09-03', 50, 'b+', 'demo@demo.com', 'demo', '8520002500', 'demo', 'demo');
+(18, 'demo', 'demo', 'M', '2020-09-03', 50, 'b+', 'demo@demo.com', 'demo', '8520002500', 'demo', 'demo'),
+(19, 'Harry Den', 'Stephen Den', 'M', '1998-06-17', 70, 'B+', 'harry.den20@gmail.co', 'Demo Address', '7854445420', 'harry', 'pass');
 
 -- --------------------------------------------------------
 
@@ -229,7 +230,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT for table `donor`
 --
 ALTER TABLE `donor`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `users`
 --
