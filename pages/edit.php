@@ -119,6 +119,42 @@
                         <li>
                             <a href="deleteview.php"><i class="fa fa-user-times"></i> Remove Donor Details</a>
                         </li>
+						
+						<li>
+                            <a href=""><i class="fa fa-bullhorn"></i> Announcements <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="makeannouncement.html">Make Announcement</a>
+                                </li>
+                                <li>
+                                    <a href="viewannouncement.php">View Announcement</a>
+                                </li>
+                                <li>
+                                    <a href="editannounceform.php">Edit Announcement</a>
+                                </li>
+                                <li>
+                                    <a href="deleteannouncement.php">Remove Announcement</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href=""><i class="fa fa-flag"></i> Campaigns <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="newcampaign.html">New Campaign</a>
+                                </li>
+                                <li>
+                                        <a href="viewcampaign.php">View Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="updatecampaign.php">Update Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="deletedcampaign.php">Delete Campaign</a>
+                                    </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -147,29 +183,29 @@
 
 <?php
 
-include 'dbconnect.php';
+				include 'dbconnect.php';
 
-$name = $_POST["name"];    
-$guardiansname = $_POST["guardiansname"];
-$gender = $_POST["gender"];
-$dob = $_POST["dob"];
-$weight = $_POST["weight"];
-$bloodgroup = $_POST["bloodgroup"];
-$email = $_POST["email"];
-$address = $_POST["address"];
-$contact = $_POST["contact"];
-$id=$_POST['id'];
-//update query
-$qry = "update donor set name='$name', guardiansname='$guardiansname', gender='$gender', dob='$dob', weight='$weight', bloodgroup='$bloodgroup', email='$email', address='$address', contact='$contact' where id='$id'";
-$result = mysqli_query($conn,$qry); //query executes
+				$name = $_POST["name"];    
+				$guardiansname = $_POST["guardiansname"];
+				$gender = $_POST["gender"];
+				$dob = $_POST["dob"];
+				$weight = $_POST["weight"];
+				$bloodgroup = $_POST["bloodgroup"];
+				$email = $_POST["email"];
+				$address = $_POST["address"];
+				$contact = $_POST["contact"];
+				$id=$_POST['id'];
+				//update query
+				$qry = "update donor set name='$name', guardiansname='$guardiansname', gender='$gender', dob='$dob', weight='$weight', bloodgroup='$bloodgroup', email='$email', address='$address', contact='$contact' where id='$id'";
+				$result = mysqli_query($conn,$qry); //query executes
 
-if(!$result){
-    echo"ERROR". mysqli_error();
-}else {
-    echo"SUCCESSFULLY UPDATED";
-    // header("Location:editview.php");
+				if(!$result){
+					echo"ERROR". mysqli_error();
+				}else {
+					echo"SUCCESSFULLY UPDATED";
+					// header("Location:editview.php");
 
-}
+				}
 
 
 ?>
