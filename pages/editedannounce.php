@@ -128,7 +128,27 @@
                                         <a href="deleteannouncement.php">Remove Announcement</a>
                                     </li>
                                 </ul>
-                            </li>
+                        </li>
+						
+						<li>
+                            <a href=""><i class="fa fa-flag"></i> Campaigns <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="newcampaign.html">New Campaign</a>
+                                </li>
+                                <li>
+                                        <a href="viewcampaign.php">View Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="updatecampaign.php">Update Campaign</a>
+                                    </li>
+                                    <li>
+                                        <a href="deletedcampaign.php">Delete Campaign</a>
+                                    </li>
+                            </ul>
+                        </li>
+						
+						
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -139,7 +159,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">BBMS</h1>
+                    <h1 class="page-header">Edit Announcement Detail</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -155,25 +175,25 @@
                                 <div class="col-lg-6">
                                     <form role="form" action="index.html" method="post">
 
-<?php
-include 'dbconnect.php';
-$announcement = $_POST["announcement"];    
-$bloodneed = $_POST["bloodneed"];
-$dat = $_POST["dat"];
-$organizer = $_POST["organizer"];
-$requirements = $_POST["requirements"];
+					<?php
+						include 'dbconnect.php';
+							$announcement = $_POST["announcement"];    
+							$bloodneed = $_POST["bloodneed"];
+							$dat = $_POST["dat"];
+							$organizer = $_POST["organizer"];
+							$requirements = $_POST["requirements"];
 
-$id=$_POST['id'];
-//update query
-$qry = "update announce set announcement='$announcement', bloodneed='$bloodneed', dat='$dat', organizer='$organizer', requirements='$requirements' where id='$id'";
-$result = mysqli_query($conn,$qry); //query executes
-if(!$result){
-    echo"ERROR". mysqli_error();
-}else {
-    echo"ANNOUNCEMENT UPDATED";
-    // header ("Location:editblood.php");
-}
-?>
+							$id=$_POST['id'];
+							//update query
+							$qry = "update announce set announcement='$announcement', bloodneed='$bloodneed', dat='$dat', organizer='$organizer', requirements='$requirements' where id='$id'";
+							$result = mysqli_query($conn,$qry); //query executes
+							if(!$result){
+								echo"ERROR". mysqli_error();
+							}else {
+								echo"The selected announcement has been updated.";
+								// header ("Location:editblood.php");
+							}
+					?>
 
                                   </form>
                                 </div>
