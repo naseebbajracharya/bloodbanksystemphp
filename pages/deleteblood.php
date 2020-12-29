@@ -200,7 +200,7 @@
 						  <td>".$row['contact']."</td>
 						  <td>".$row['bloodqty']."</td>
 						  <td>".$row['collection']."</td>
-						  <td><a href='editbloodform.php?id=".$row['id']."'><i class='fa fa-trash' style='color:red'></i></a></td>
+						  <td><a href='deletebloodrecord.php?id=".$row['id']."'><i class='fa fa-trash' style='color:red'></i></a></td>
 
 						</tr>
 						<tbody>
