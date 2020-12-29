@@ -160,7 +160,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">UPDATE CAMPAIGN</h1>
+                    <h1 class="page-header">Edit Campaign Details</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -169,25 +169,25 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Blood Details
+                            Total Records of available campaign
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
 
                                 <?php
-include 'dbconnect.php';
-$id=$_GET['id'];
-$qry= "select * from campaigndb where id='$id'";
-$result=mysqli_query($conn,$qry);
-while($row=mysqli_fetch_array($result)){
-?> 
+									include 'dbconnect.php';
+									$id=$_GET['id'];
+									$qry= "select * from campaigndb where id='$id'";
+									$result=mysqli_query($conn,$qry);
+									while($row=mysqli_fetch_array($result)){
+								?> 
 
                                     <form role="form" action="finaladdedcampaign.php" method="post">
                                      
                                         <div class="form-group">
                                             <label>Campaign Name</label>
-                                            <input class="form-control" name="cname" value='<?php echo $row['cname']; ?>' required>
+                                            <input class="form-control" name="cname" type="text" value='<?php echo $row['cname']; ?>' required>
                                             
                                         </div>
                                         
