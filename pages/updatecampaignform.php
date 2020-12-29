@@ -203,12 +203,12 @@
 
                                         <div class="form-group">
                                             <label>Campaign Date</label>
-                                            <input class="form-control" placeholder="Enter Weight" name="cdate" value='<?php echo $row['cdate']; ?>' required>
+                                            <input class="form-control" type="date" name="cdate" value='<?php echo $row['cdate']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <input class="form-control" placeholder="Enter Here" name="descp" value='<?php echo $row['descp']; ?>' required>
+                                            <input class="form-control" type="text" name="descp" value='<?php echo $row['descp']; ?>' required>
                                         </div>
 
 
