@@ -208,7 +208,7 @@
 
                                         <div class="form-group">
                                             <label>Description</label>
-                                            <input class="form-control" type="text" name="descp" value='<?php echo $row['descp']; ?>' required>
+											 <textarea class="form-control" rows="4" name="descp" type="text" required><?php echo $row['descp']; ?></textarea>
                                         </div>
 
 
@@ -216,7 +216,7 @@
              <!-- id hidden grna input type ma "hidden" -->
              <input type="hidden" name="id" value="<?php echo $row['id'];?>">      
 
-                             <button type="submit"  class="btn btn-default">Edit</button>
+                             <button type="submit"  class="btn btn-success">Make Changes</button>
                 
                                    </form> 
 
