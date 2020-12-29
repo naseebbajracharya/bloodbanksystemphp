@@ -193,12 +193,12 @@
                                         
                                         <div class="form-group">
                                             <label>Organizer Name</label>
-                                            <input class="form-control" placeholder="Enter Here" name="oname" value='<?php echo $row['oname']; ?>' required>
+                                            <input class="form-control" type="text" name="oname" value='<?php echo $row['oname']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Phone Number</label>
-                                            <input class="form-control" placeholder="Enter DOB" name="phn" value='<?php echo $row['phn']; ?>' required>
+                                            <input class="form-control" type="number" name="phn" value='<?php echo $row['phn']; ?>' required>
                                         </div>
 
                                         <div class="form-group">
