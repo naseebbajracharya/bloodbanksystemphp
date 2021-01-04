@@ -131,7 +131,7 @@
 						<tr>
 							<th>Title</th>
 							<th>Blood Needed</th>
-							<th>Date&Time</th>
+							<th>Announcement Date</th>
 							<th>Organizer</th>
 							<th>Requirements</th>
 						</tr>
