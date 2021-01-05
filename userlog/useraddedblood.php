@@ -23,13 +23,6 @@
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -74,9 +67,6 @@
                             <!-- /.nav-second-level -->
                         </li>
                        
-                        <li>
-                            <a href="userviewdonor.php"><i class="fa fa-edit fa-eye"></i> View Donor Details</a>
-                        </li>
                         
                         <li>
                             <a href="userviewannouncement.php"><i class="fa fa-bullhorn"></i> View Announcements </a>
@@ -114,42 +104,38 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <form role="form" action="index.php" method="post">
-            <?php 
+							<?php 
 
-if(isset($_POST['name'])){
-$name = $_POST["name"];    
-$gender = $_POST["gender"];
-$dob = $_POST["dob"];
-$weight = $_POST["weight"];
-$bloodgroup = $_POST["bloodgroup"];
-$address = $_POST["address"];
-$contact = $_POST["contact"];
-$bloodqty = $_POST["bloodqty"];
-$collection = $_POST["collection"];
+							if(isset($_POST['name'])){
+								$name = $_POST["name"];    
+								$gender = $_POST["gender"];
+								$dob = $_POST["dob"];
+								$weight = $_POST["weight"];
+								$bloodgroup = $_POST["bloodgroup"];
+								$address = $_POST["address"];
+								$contact = $_POST["contact"];
+								$bloodqty = $_POST["bloodqty"];
+								$collection = $_POST["collection"];
 
-include '../pages/dbconnect.php';
-//code after connection is successfull
-$qry = "insert into blood(name,gender,dob,weight,bloodgroup,address,contact,bloodqty,collection) values ('$name','$gender','$dob','$weight','$bloodgroup','$address','$contact','$bloodqty','$collection')";
-$result = mysqli_query($conn,$qry); //query executes
+								include '../pages/dbconnect.php';
+								//code after connection is successfull
+								$qry = "insert into blood(name,gender,dob,weight,bloodgroup,address,contact,bloodqty,collection) values ('$name','$gender','$dob','$weight','$bloodgroup','$address','$contact','$bloodqty','$collection')";
+								$result = mysqli_query($conn,$qry); //query executes
 
-if(!$result){
-    echo"ERROR";
-}else {
-    echo" <div style='text-align: center'><h1>BLOOD DONATED</h1>";
-    echo" <a href='userdashboard.php' div style='text-align: center'><h3>Go Back</h3>";
+								if(!$result){
+									echo"ERROR";
+								}else {
+									echo" <div style='text-align: center'><h1>Blood Donation Details Has Been Listed. Thank You.</h1>";
+									echo" <a href='userdashboard.php' div style='text-align: center'><h3>Go Back</h3>";
 
-}
+								}
 
-}else{
-    echo"<h3>YOU ARE NOT AUTHORIZED TO REDIRECT THIS PAGE. GO BACK to <a href='userdashboard.php'> DASHBOARD </a></h3>";
-}
+							}else{
+								echo"<h3>YOU ARE NOT AUTHORIZED TO REDIRECT THIS PAGE. GO BACK to <a href='userdashboard.php'> DASHBOARD </a></h3>";
+							}
 
 
-?>
-                                    
-                                
-                                        
-                
+							?>        
                                     </form>
                                 </div>
                                 
