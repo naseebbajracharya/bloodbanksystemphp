@@ -287,7 +287,7 @@
 						  
 						  <div class="span12">
 							
-							<div id="piechart" style="width: 690px; height: 310px; margin-left:auto; margin-right:auto;"></div>  
+							<div id="piechart" style="width: 690px; height: 320px; margin-left:auto; margin-right:auto;"></div>  
 
 						  </div>
 						</div>
