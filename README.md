@@ -11,35 +11,35 @@
 
 - Admin's Login Panel
 
-![](prototype01.png)
+![](sc1.png)
 
 - Admin's Dashboard
 
-![](prototype2.png)
+![](sc2.png)
 
 - Add Blood Details Form
 
-![](prototype06.png)
+![](sc6.png)
 
 - Add Donor Details Form
 
-![](prototype03.png)
+![](sc3.png)
 
 - Announcement Form
 
-![](prototype4.png)
+![](sc4.png)
 
 - Campaign Form
 
-![](prototype05.png)
+![](sc5.png)
 
 - User's Login Panel
 
-![](prototype07.png)
+![](sc7.png)
 
 - User Dashboard
 
-![](prototype08.png)
+![](sc8.png)
 
 
 ### Installation
