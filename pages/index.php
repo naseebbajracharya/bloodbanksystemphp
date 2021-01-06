@@ -275,17 +275,28 @@
                 </div>
             </div>
             <!-- /.row -->
-            <div class="row">
+             <div class="row">
 			
-                <div class=".col-lg-12">
-                    
-                    <!-- /.panel -->
-                
-                    <!-- /.panel -->
-                   
-                    </div>
-                    <!-- /.panel -->
-                </div>
+				<div class=".col-lg-12">
+				
+				<div id="content">
+					 
+					  <div class="container-fluid">
+						
+						<div class="row-fluid">
+						  
+						  <div class="span12">
+							
+							<div id="piechart" style="width: 690px; height: 310px; margin-left:auto; margin-right:auto;"></div>  
+
+						  </div>
+						</div>
+					  </div>
+				</div>
+			
+				</div>
+
+           </div>
                 <!-- /.col-lg-8 -->
                 
                 <!-- /.col-lg-4 -->
