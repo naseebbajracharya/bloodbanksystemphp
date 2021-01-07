@@ -11,7 +11,7 @@
 
 - Admin's Login Panel
 
-![](sc1.png)
+![](sc01.png)
 
 - Admin's Dashboard
 
