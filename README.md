@@ -23,7 +23,7 @@
 
 - Add Donor Details Form
 
-![](sc3.png)
+![](sc03.png)
 
 - Announcement Form
 
