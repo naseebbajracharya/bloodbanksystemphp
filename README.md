@@ -15,7 +15,7 @@
 
 - Admin's Dashboard
 
-![](sc2.png)
+![](sc02.png)
 
 - Add Blood Details Form
 
